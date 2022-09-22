@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#graphic {
+  position: relative;
+}
+
+.middleCard {
+  box-shadow: inset;
+  position: absolute;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.5);
+  background-color: var(--bgColor);
+  transition: background-color 2s;
+  width: calc(90% - 32px);
+  max-width: 900px;
+  border-radius: 20px;
+  left: 0;
+  right: 0;
+  top: 30vh;
+  margin: 0 auto;
+}
+
+.blur {
+  backdrop-filter: blur(10px);
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 35%;
+}
+
+i{
+  padding: 30px;
+  color: var(--h1CardColor);
+  transition: color 2s;
+}
+
+#picOfMe {
+  float: right;
+  width: 25%;
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.h1Card {
+  float: left;
+  color: var(--h1CardColor);
+  transition: color 2s;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+#cardAbout {
+  float: left;
+  text-align: left;
+  color: white;
+  font-size: 150%;
+  width: 55%;
+  margin-left: 30px;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
