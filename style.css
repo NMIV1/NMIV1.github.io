@@ -7,6 +7,13 @@ body {
   position: relative;
 }
 
+video {
+  object-fit: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
 .middleCard {
   box-shadow: inset;
   position: absolute;
@@ -27,18 +34,12 @@ body {
   backdrop-filter: blur(10px);
 }
 
-#links {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 50%;
-  margin-top: 35%;
-}
-
-i{
-  padding: 30px;
+.h1Card {
+  float: left;
   color: var(--h1CardColor);
   transition: color 2s;
+  font-size: 50px;
+  margin-left: 30px;
 }
 
 #picOfMe {
@@ -51,14 +52,6 @@ i{
   margin-bottom: 30px;
 }
 
-.h1Card {
-  float: left;
-  color: var(--h1CardColor);
-  transition: color 2s;
-  font-size: 50px;
-  margin-left: 30px;
-}
-
 #cardAbout {
   float: left;
   text-align: left;
@@ -68,14 +61,21 @@ i{
   margin-left: 30px;
 }
 
-video {
-  object-fit: cover;
-  position: absolute;
-  height: 100vh;
-  width: 100%;
+#links {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 35%;
 }
 
-@media only screen and (max-width: 600px){
+i {
+  padding: 30px;
+  color: var(--h1CardColor);
+  transition: color 2s;
+}
+
+@media only screen and (max-width: 600px) {
 
 
   .middleCard {
@@ -95,16 +95,16 @@ video {
     top: 20vh;
     margin: 0 auto;
   }
-  
+
 
   #picOfMe {
     width: 40%;
     border-radius: 100%;
     margin: 0;
     margin-top: 20px;
-    
+
   }
-  
+
   .h1Card {
     color: var(--h1CardColor);
     transition: color 2s;
@@ -112,9 +112,9 @@ video {
     margin: 0;
     margin-top: 10px;
     text-align: center;
-    
+
   }
-  
+
   #cardAbout {
     text-align: center;
     color: white;
@@ -122,7 +122,7 @@ video {
     margin: 0;
     margin-top: 20px;
 
-    
+
   }
 
   #links {
