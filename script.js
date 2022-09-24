@@ -1,6 +1,13 @@
 
+var aboutText = "Hello My name is Nathan and this is my about about about abouta" +
+  "bout about about about about about about aboutabout aboutabout about about about" +
+  "about about about about about about about about";
+const gallery = document.getElementById("gallery");
+
 update();
-setInterval(update, 2000)
+setInterval(update, 2000);
+
+gallery.style.display = "none";
 
 function getRandomColor(opacity) {
   var characters = "0123456789ABCDEF";
@@ -14,8 +21,16 @@ function getRandomColor(opacity) {
 
 function update() {
   let color = getRandomColor("");
-  document.documentElement.style.setProperty("--bgColor", color + "44");
+  document.documentElement.style.setProperty("--bgColor", color + "55");
   document.documentElement.style.setProperty("--h1CardColor", color + "ff");
+}
 
+function toggleShow() {
+
+  if ( gallery.style.display == "none") {
+    gallery.style.display = "block";
+  } else {
+    gallery.style.display = "none";
+  }
 }
 

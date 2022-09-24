@@ -1,0 +1,39 @@
+Gallery code{
+  <section id="gallery">
+        <div class="row">
+
+          <img onclick="toggleShow('imageSpace','images/picOfMe.jpg')" class="galleryPhoto" src="images/picOfMe.jpg" alt="Nathaniel Moreland
+        wearing a bow tie in black and white">
+        <img onclick="toggleShow('imageSpace','images/picOfMe.jpg')" class="galleryPhoto" src="images/picOfMe.jpg" alt="Nathaniel Moreland
+        wearing a bow tie in black and white">
+        <img onclick="toggleShow('imageSpace','images/picOfMe.jpg')" class="galleryPhoto" src="images/picOfMe.jpg" alt="Nathaniel Moreland
+        wearing a bow tie in black and white">
+        <img onclick="toggleShow('imageSpace','images/picOfMe.jpg')" class="galleryPhoto" src="images/picOfMe.jpg" alt="Nathaniel Moreland
+        wearing a bow tie in black and white">
+
+        </div>
+
+        <div class="row">
+
+          <img onclick="toggleShow('imageSpace','images/picOfMe.jpg')" class="galleryPhoto" src="images/picOfMe.jpg" alt="Nathaniel Moreland
+        wearing a bow tie in black and white">
+        <img onclick="toggleShow('imageSpace','images/picOfMe.jpg')" class="galleryPhoto" src="images/picOfMe.jpg" alt="Nathaniel Moreland
+        wearing a bow tie in black and white">
+        <img onclick="toggleShow('imageSpace','images/picOfMe.jpg')" class="galleryPhoto" src="images/picOfMe.jpg" alt="Nathaniel Moreland
+        wearing a bow tie in black and white">
+        <img onclick="toggleShow('imageSpace','images/picOfMe.jpg')" class="galleryPhoto" src="images/picOfMe.jpg" alt="Nathaniel Moreland
+        wearing a bow tie in black and white">
+
+        </div>
+      </section>
+
+      <section id="imageSpace">
+        <img id="displayedImage" src="images/picOfMe.jpg" alt="Nathaniel Moreland
+        wearing a bow tie in black and white">
+        <div onclick="toggleShow('gallery')">
+         <p id="closeImage">X</p>
+        </div>
+      </section>
+
+    </section>
+}
