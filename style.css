@@ -1,0 +1,225 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  min-height: 100vh;
+}
+
+#about {
+  font-size: 24px;
+  margin: auto;
+  text-align: center;
+  width: max-content;
+  margin-top: 40px;
+}
+
+p,
+h1,
+a {
+  color: white;
+}
+
+#show-tell {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.show-tell-item {
+  padding: 15px;
+}
+
+.Card {
+  background-color: gray;
+  border: 10px solid var(--bgColor);
+  transition: border-color 2s;
+  border-radius: 20px;
+  width: calc(90% - 32px);
+  max-width: 900px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.h1Card {
+  float: left;
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+#picOfMe {
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  float: right;
+  width: 25%;
+  min-width: 150px;
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#cardAbout {
+  float: left;
+  text-align: left;
+  font-size: 24px;
+  width: 55%;
+  margin-left: 30px;
+}
+
+#Cardinfo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 50%;
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+#email {
+  background-color: rgba(255, 255, 255, 0.255);
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 36px;
+}
+
+.CardLink {
+  padding: 30px;
+  color: white;
+}
+
+/* nav buttons */
+
+.navButton {
+  display: block;
+  background-color: grey;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  transition: border-color 300ms;
+  border-radius: 20px;
+  width: 20%;
+  min-width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.navButton:hover {
+  border-color: var(--bgColor);
+  transition: border-color 1s;
+}
+
+.navText {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Gallery */
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.galleryPhoto {
+  max-width: 300px;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+.row {
+  background-image: url("images/rowImage.png");
+  background-size: 20%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+#footerWrap {
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  font-size: 10px;
+  height: 2.5rem;
+  bottom: 0px;
+  width: 100%;
+}
+
+img {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 988px) {
+  .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h1Card {
+    font-size: 30px;
+    margin: 15px;
+  }
+
+  #picOfMe {
+    margin: 0;
+  }
+
+  #cardAbout {
+    text-align: center;
+    margin: 15px;
+    width: 90%;
+  }
+
+  #Cardinfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #email {
+    margin: 15px;
+  }
+
+  .icon {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 70px;
+    height: auto;
+  }
+
+  .navButton {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  #gallery {
+    margin-top: 40px;
+    border: 2px solid white;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .galleryPhoto {
+    margin-top: 40px;
+  }
+}

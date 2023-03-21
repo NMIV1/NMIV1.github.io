@@ -1,0 +1,86 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: "Courier New", 'Courier', monospace;
+  position: relative;
+  min-height: 100vh;
+}
+
+p,
+h1 {
+  color: white;
+}
+
+/* nav buttons */
+
+a {
+  text-decoration: none;
+}
+
+a:after {
+  text-decoration: none;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.nav-button {
+  background-color: grey;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  transition: border-color 300ms;
+  border-radius: 20px;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.nav-button:hover {
+  border-color: var(--bgColor);
+  transition: border-color 1s;
+}
+
+.nav-button p {
+  text-align: center;
+  font-size: 20px;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+}
+
+/* footer */
+
+#footer-wrap {
+  margin-top: 10px;
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  font-size: 10px;
+  height: 2.5rem;
+  bottom: 0px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 988px) {
+  .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h1Card {
+    font-size: 30px;
+    margin: 15px;
+  }
+}
